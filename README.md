@@ -14,6 +14,8 @@
 
 ## Introduction
 
+## Introduction
+
 This repository contains my attempt at the final project for the Programming & Scripting module year 2020. The project was broken down into smaller programs which are all included in the repository, along with their logfile that demosntrate how they were developed 
 
 The objective of this project was to research the Iris data set and use python to perform analysis of it. We were to complie a program in python and present our reseach, methodology and findings. The project should be conducted in stages and we should discuss the work done at each stage.
