@@ -14,9 +14,47 @@ versicolor =  iris.loc[iris['Species'] == 'Iris-versicolor']
 
 virginica =  iris.loc[iris['Species'] == 'Iris-virginica']
 
-plt.hist(setosa['SepalLengthCm'], 20, orientation='vertical', facecolor='blue', alpha=0.5, label= 'Sepal_Length')   
-plt.hist(versicolor['SepalLengthCm'], 20, orientation='vertical', facecolor='green', alpha=0.5, label= 'Sepal_Length')
-plt.hist(virginica['SepalLengthCm'], 20, orientation='vertical', facecolor='orange', alpha=0.5, label= 'Sepal_Length')
+plt.hist(setosa['SepalLengthCm'], 20, orientation='vertical', facecolor='blue', alpha=0.5, label= 'Setosa')   
+plt.hist(versicolor['SepalLengthCm'], 20, orientation='vertical', facecolor='green', alpha=0.5, label= 'Versicolor')
+plt.hist(virginica['SepalLengthCm'], 20, orientation='vertical', facecolor='orange', alpha=0.5, label= 'Virginica')
+plt.xlabel('Sepal_Length_CM')
+plt.ylabel('Frequency')
+plt.title('Sepal_Length')
+plt.legend()
+
 #save the plot as a png to the current folder 
 plt.savefig("Sepal_Length_Hist.png")
+plt.close()
 
+plt.hist(setosa['SepalWidthCm'], 20, orientation='vertical', facecolor='blue', alpha=0.5, label= 'Setosa')   
+plt.hist(versicolor['SepalWidthCm'], 20, orientation='vertical', facecolor='green', alpha=0.5, label= 'Versicolor')
+plt.hist(virginica['SepalWidthCm'], 20, orientation='vertical', facecolor='orange', alpha=0.5, label= 'Virginica')
+plt.xlabel('Sepal_Width_CM')
+plt.ylabel('Frequency')
+plt.title('Sepal_Width')
+plt.legend()
+#save the plot as a png to the current folder 
+plt.savefig("Sepal_Width_Hist.png")
+plt.close()
+
+plt.hist(setosa['PetalLengthCm'], 20, orientation='vertical', facecolor='blue', alpha=0.5, label= 'Setosa')   
+plt.hist(versicolor['PetalLengthCm'], 20, orientation='vertical', facecolor='green', alpha=0.5, label= 'Versicolor')
+plt.hist(virginica['PetalLengthCm'], 20, orientation='vertical', facecolor='orange', alpha=0.5, label= 'Virginica')
+plt.xlabel('Petal_Length_CM')
+plt.ylabel('Frequency')
+plt.title('Petal_Length')
+plt.legend()
+#save the plot as a png to the current folder 
+plt.savefig("Petal_Length_Hist.png")
+plt.close()
+
+plt.hist(setosa['PetalWidthCm'], 20, orientation='vertical', facecolor='blue', alpha=0.5, label= 'Setosa')   
+plt.hist(versicolor['PetalWidthCm'], 20, orientation='vertical', facecolor='green', alpha=0.5, label= 'Versicolor')
+plt.hist(virginica['PetalWidthCm'], 20, orientation='vertical', facecolor='orange', alpha=0.5, label= 'Virginica')
+plt.xlabel('Petal_Width_CM')
+plt.ylabel('Frequency')
+plt.title('Petal_Width')
+plt.legend()
+#save the plot as a png to the current folder 
+plt.savefig("Petal_Width_Hist.png")
+plt.close()
