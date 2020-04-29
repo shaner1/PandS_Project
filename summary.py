@@ -8,7 +8,7 @@ iris = pd.read_csv("iris.csv")
 # the summary look messy so I delete it by using del 
 del iris['Id']
 
-#creating a variable called summary. Summary is a string containing the output from the describe() function
+
 summary = str(iris.describe())
 
 #open a text file called test and set it to write
@@ -17,5 +17,4 @@ with open('test.txt', 'w') as test:
       test.writelines("\nThis is a summary of the variables in the iris dataset: \n")
       test.write(summary)
         
-
 test.close()

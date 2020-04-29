@@ -61,15 +61,18 @@ To run this programs, you will first need to ensure you can access the Command L
 
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher.
 
-The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
+The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. This linear discriminant analysis would lay the foundation of machine learning.
+
+The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. 
+
+This ability to distinguist between 
 
 <<<<<<< HEAD
 ![](images/Iris_setosa.jpg) ![](images/Iris_versicolor.jpg) ![](images/Iris_virginica.jpg)
-=======
-![](/images/Iris_setosa.jpg)
->>>>>>> 22aa8ff3e58583077ce799336a5f1881879315db
 
-The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. 
+![](/images/Iris_setosa.jpg)
+
+
 
 
 
@@ -93,7 +96,7 @@ Another apsect I struggled with was trying to nicely format the summary in the t
 
 ### Histogram
 
-The next aspect of the program I undertook was saving a histogram of each variable to .png. The individual file for this aspect of the program can be found in the repository named "hist.py" and "hist_log.py" & "hist_improve_log.py" are the relevant log files.
+The next aspect of the program I undertook was saving a histogram of each variable to .png. A histogram is a visual representation of how the data points are distributed with respect to the frequency.The individual file for this aspect of the program can be found in the repository named "hist.py" and "hist_log.py" & "hist_improve_log.py" are the relevant log files.
 
 Generating these histograms proved to be the most difficult and time consuming single aspect of the program. The initial histograms were simple, but I decided I wanted to be able to differentiate the flower types in each histogram. After much reserach, I found the .loc function in Pandas that allowed me to group the flower types and assign them to variables, which could be called to create separate histogram. As I could now create histograms for certain characteristics of each flower type, I just needed to overlay the different histograms on top of each other to get a histogram for each characteristic that diffirentiated by flower type. 
 
@@ -101,11 +104,23 @@ The code I used here is rather clunky and could be improved a lot. I read about 
 
 ### Scatter Plot
 
+Scatter plots are used to plot data points on a horizontal and a vertical axis in the attempt to show how much one variable is affected by another.  The relationship between two variables is called their correlation.
+
 Simple
 
 I wanted to output just scatter plots ( without the histograms that are included) as I had already created histograms, but couldn't find a sutable plot type in the seaborn documentation. 
 
 ### Joining everything together 
+
+### Analysis
+
+Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal
+
+What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most beteen the three varieties is the petal length. It is possible to distinguist the iris-setosa from the two other iris flower when looking at the sepal length. We also see that length of the sepal for the iris-setosa seems to be more comsistent than the other two varieties. 
+
+It is not possible to diffferentiate the iris-veriscolor and iris-virginica based on the characteristics described. 
+
+Looking at the scatter plots, there seems to be a positive correlation between the length and width of all the species, however there is a distinguishing strong correlation and relationship between petal length and petal width.
 
 ## Conclusion
 
@@ -116,12 +131,13 @@ I relied on Ipython for trail and error and worked a lot locally before uploadin
 ## Reference
 (https://www.kaggle.com/arshid/iris-flower-dataset)
 
-
+(https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html)
 (https://pandas.pydata.org/pandas-docs/stable/index.html)
 (https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/)
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html?highlight=describe#pandas.DataFrame.describe)
 (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
+(https://www.interviewqs.com/ddi_code_snippets/rows_cols_python)
 
 (https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 (https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
@@ -130,7 +146,10 @@ I relied on Ipython for trail and error and worked a lot locally before uploadin
 
 (https://mode.com/example-gallery/python_histogram/)
 
+https://rpubs.com/AjinkyaUC/Iris_DataSet
+
 (https://www.youtube.com/watch?v=X9n2iOn6XEY)
 (https://seaborn.pydata.org/tutorial/axis_grids.html)
 
+https://www.datacamp.com/community/tutorials/git-push-pull
 :+1:
