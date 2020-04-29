@@ -1,0 +1,15 @@
+# IPython log file
+
+import matplotlib.pyplot 
+import matplotlib.pyplot as ply
+import matplotlib.pyplot as plt
+import pandas as pd
+get_ipython().run_line_magic('logstart', '')
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_("iris.csv")
+df = pd.read_csv("iris.csv")
+df.describe(exclude = 'Id')
+df.describe(exclude = [Id])
+df.drop(column=['Id'])
+exit()

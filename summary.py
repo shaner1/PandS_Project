@@ -14,4 +14,8 @@ summary = str(iris.describe())
 #open a text file called test and set it to write
 with open('test.txt', 'w') as test:
     #then write the contents of summary to this file 
-    test.write(summary)
+      test.writelines("\nThis is a summary of the variables in the iris dataset: \n")
+      test.write(summary)
+        
+
+test.close()
