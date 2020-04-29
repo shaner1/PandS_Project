@@ -63,9 +63,9 @@ The Iris data set is a multivariate data set introduced by the British statistic
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
-![](images/Iris_setosa.jpg)
+![](images/Iris_setosa.jpg) ![](images/Iris_versicolor.jpg) ![](images/Iris_virginica.jpg)
 
-The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species.[2] Two of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".[3]
+The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. 
 
 
 
@@ -75,7 +75,7 @@ After research, I began work on the program itself. I decided to break the progr
 
 ### Reading in the Data Set 
 
-The fist step I needed to take was to find a suitable data set to work with. I chose to go with a CSV file instead of JSON or Txt as it would make it easier to differentiate the variables. I found a reliable file on Kaggle; (https://www.kaggle.com/arshid/iris-flower-dataset). I went with this as it was a "Tidy" data set. A "Tidy" data set is defined as a data set arranged such that each varaialbe is a column and each observtion is a row.
+The fist step I needed to take was to find a suitable data set to work with. I chose to go with a CSV file instead of JSON or Txt as it would make it easier to differentiate the variables. I found a reliable file on Kaggl. I went with this as it was a "Tidy" data set. A "Tidy" data set is defined as a data set arranged such that each varaialbe is a column and each observtion is a row.
 
 Reading in the file was stragiht forward, I used the Pandas .read function to do so. As the data set incldued a column called Id which numbered each observation, the output of the summary looked a bit messy so I decided to delete this column.
 
@@ -111,6 +111,7 @@ I relied on Ipython for trail and error and worked a lot locally before uploadin
 
 ## Reference
 (https://www.kaggle.com/arshid/iris-flower-dataset)
+
 
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html)
 (https://pandas.pydata.org/pandas-docs/stable/index.html)
