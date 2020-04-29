@@ -91,15 +91,15 @@ The next aspect of the program I undertook was saving a histogram of each variab
 
 Generating these histograms proved to be the most difficult and time consuming single aspect of the program. The initial histograms were simple, but I decided I wanted to be able to differentiate the flower types in each histogram. After much reserach, I found the .loc function in Pandas that allowed me to group the flower types and assign them to variables, which could be called to create separate histogram. As I could now create histograms for certain characteristics of each flower type, I just needed to overlay the different histograms on top of each other to get a histogram for each characteristic that diffirentiated by flower type. 
 
-The code I used here is rather clunky and could be improved a lot. I read about about a better way to approach overlaying histograms by using for loops insteads of duplicating the code 4 times and changing the names, but I wasn't able to find sufficient documentation to explain how to do this. (https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib)
+The code I used here is rather clunky and could be improved a lot. I read about about a better way to approach overlaying histograms by using for loops insteads of duplicating the code 4 times and changing the names, but I wasn't able to find sufficient documentation to explain how to do this.
 
 ### Scatter Plot
 
 Scatter plots are used to plot data points on a horizontal and a vertical axis in the attempt to show how much one variable is affected by another.  The relationship between two variables is called their correlation.
 
-Simple
+Generating the scatter plots was the simpliest part of the program thanks to seaborn, which handled the look of the plots.
 
-I wanted to output just scatter plots ( without the histograms that are included) as I had already created histograms, but couldn't find a sutable plot type in the seaborn documentation. 
+I wanted to output just scatter plots, without the histograms that are included, as I had already created histograms, but couldn't find a sutable plot type in the seaborn documentation. 
 
 ### Joining everything together 
 
@@ -115,9 +115,15 @@ In conclusion, it is not possible to diffferentiate the iris-veriscolor and iris
 
 ## Conclusion
 
+The objective of this project was to research the Iris data set and use python to perform analysis of it. I was requried to complie a program in python that would support my analysis and then present my findings. I feel, I sufficiently met the brief of this assignment and have improved my proficieny in python and broaden my knowledge of data analysis.
+
+In retrospect there are a few things I would do differently and improvement I would like to make, which I've listed previously.
+
 I spent too much time on reasearch and investigate way beyond the scope of this module. 
 
-I relied on Ipython for trail and error and worked a lot locally before uploading my first. Due to this my commit history is qutie recent and appears as though i have not been working consistently 
+I relied on Ipython for trail and error and worked a lot locally before uploading my first. Due to this my commit history is qutie recent and appears as though i have not been working consistently. Moving forward, i will get better at documenting my progress
+
+Get better with Git as I ran into a few problems changing branches and pulling changes.
 
 ## Reference
 
@@ -136,6 +142,7 @@ I relied on Ipython for trail and error and worked a lot locally before uploadin
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html?highlight=describe#pandas.DataFrame.describe)
 (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
 (https://www.interviewqs.com/ddi_code_snippets/rows_cols_python)
+ (https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib)
 
 (https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 (https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
