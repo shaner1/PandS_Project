@@ -63,7 +63,11 @@ The Iris data set is a multivariate data set introduced by the British statistic
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
+<<<<<<< HEAD
 ![](images/Iris_setosa.jpg) ![](images/Iris_versicolor.jpg) ![](images/Iris_virginica.jpg)
+=======
+![](/images/Iris_setosa.jpg)
+>>>>>>> 22aa8ff3e58583077ce799336a5f1881879315db
 
 The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. 
 
