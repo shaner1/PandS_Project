@@ -59,20 +59,11 @@ To run this programs, you will first need to ensure you can access the Command L
 
 ## Research 
 
-The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher.
+The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. This linear discriminant analysis would lay the foundation of machine learning.
 
-The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. 
-
-This ability to distinguist between 
-
-<<<<<<< HEAD
 ![](images/Iris_setosa.jpg) ![](images/Iris_versicolor.jpg) ![](images/Iris_virginica.jpg)
-
-![](/images/Iris_setosa.jpg)
-
-
 
 
 
@@ -116,11 +107,11 @@ I wanted to output just scatter plots ( without the histograms that are included
 
 Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal
 
-What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most beteen the three varieties is the petal length. It is possible to distinguist the iris-setosa from the two other iris flower when looking at the sepal length. We also see that length of the sepal for the iris-setosa seems to be more comsistent than the other two varieties. 
-
-It is not possible to diffferentiate the iris-veriscolor and iris-virginica based on the characteristics described. 
+What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most beteen the three varieties is the petal length. . We also see that length of the sepal for the iris-setosa seems to be more comsistent than the other two varieties. 
 
 Looking at the scatter plots, there seems to be a positive correlation between the length and width of all the species, however there is a distinguishing strong correlation and relationship between petal length and petal width.
+
+In conclusion, it is not possible to diffferentiate the iris-veriscolor and iris-virginica based on the characteristics described. However, it is possible to distinguist the iris-setosa from the two other iris flower when looking at the sepal length.
 
 ## Conclusion
 
@@ -129,6 +120,13 @@ I spent too much time on reasearch and investigate way beyond the scope of this 
 I relied on Ipython for trail and error and worked a lot locally before uploading my first. Due to this my commit history is qutie recent and appears as though i have not been working consistently 
 
 ## Reference
+
+(https://en.wikipedia.org/wiki/Iris_flower_data_set)
+(https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
+(https://rpubs.com/AjinkyaUC/Iris_DataSet)
+(https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
+(http://rstudio-pubs-static.s3.amazonaws.com/450733_9a472ce9632f4ffbb2d6175aaaee5be6.html)
+
 (https://www.kaggle.com/arshid/iris-flower-dataset)
 
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
@@ -146,7 +144,7 @@ I relied on Ipython for trail and error and worked a lot locally before uploadin
 
 (https://mode.com/example-gallery/python_histogram/)
 
-https://rpubs.com/AjinkyaUC/Iris_DataSet
+
 
 (https://www.youtube.com/watch?v=X9n2iOn6XEY)
 (https://seaborn.pydata.org/tutorial/axis_grids.html)
