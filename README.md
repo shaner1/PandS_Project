@@ -120,9 +120,12 @@ Once the individual components of the program were complete, I set about merging
 
 ![Petal Length](Petal_Length_Hist.png) ![Petal Width](Petal_Width_Hist.png)
 ![Sepal Length](Sepal_Length_Hist.png) ![Petal Width](Sepal_Width_Hist.png)
+
 Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal
 
 What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most beteen the three varieties is the petal length. . We also see that length of the sepal for the iris-setosa seems to be more comsistent than the other two varieties. 
+
+![Scatter Plot](scatter.png)
 
 Looking at the scatter plots, there seems to be a positive correlation between the length and width of all the species, however there is a distinguishing strong correlation and relationship between petal length and petal width.
 
