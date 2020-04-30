@@ -71,6 +71,7 @@ To run this programs, you will first need to ensure you can access the Command L
 
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
 
+![Iris Flowers](iris_flowers.png)
 ![Iris Setosa](Iris_setosa.jpg width="50" height="50") ![Iris Versicolor](Iris_versicolor.jpg) ![Iris Virginica](Iris_virginica.jpg)
 
 
