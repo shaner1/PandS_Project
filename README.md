@@ -67,11 +67,11 @@ To run this programs, you will first need to ensure you can access the Command L
 
 ## **Research** 
 
-![Ronald Fisher](Ronald_Fisher.jpg) 
+![Ronald Fisher](Ronald_Fisher.jpeg) 
 
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
 
-![Iris Setosa](Iris_setosa.jpg) ![Iris Versicolor](Iris_versicolor.jpg) ![Iris Virginica](Iris_virginica.jpg)
+![Iris Setosa](Iris_setosa.jpg =250x250) ![Iris Versicolor](Iris_versicolor.jpg) ![Iris Virginica](Iris_virginica.jpg)
 
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. This linear discriminant analysis would lay the foundation of machine learning.
@@ -172,5 +172,8 @@ I enjoyed this project and look forward to learning more about how to perform da
 (https://www.youtube.com/watch?v=X9n2iOn6XEY)
 (https://seaborn.pydata.org/tutorial/axis_grids.html)
 
-https://www.datacamp.com/community/tutorials/git-push-pull
+(https://www.datacamp.com/community/tutorials/git-push-pull)
+
+(https://stackoverflow.com/questions/14494747/add-images-to-readme-md-on-github)
+(https://gist.github.com/uupaa/f77d2bcf4dc7a294d109)
 :+1:
