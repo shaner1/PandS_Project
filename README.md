@@ -1,5 +1,7 @@
 # PandS_Project
 
+
+
 ## Programming and Scripting Problem Sheet 2020
 
 - Introduction
@@ -14,7 +16,7 @@
 
 ## Introduction
 
-This repository contains my attempt at the final project for the Programming & Scripting module year 2020. The project was broken down into smaller programs which are all included in the repository, along with their logfile that demosntrate how they were developed 
+This repository contains my attempt at the final project for the Programming & Scripting module year 2020. The project was broken down into smaller programs which are all included in the repository, along with their logfile that demosntrates how they were developed. 
 
 The objective of this project was to research the Iris data set and use python to perform analysis of it. We were to complie a program in python and present our reseach, methodology and findings. The project should be conducted in stages and we should discuss the work done at each stage.
 
@@ -25,29 +27,35 @@ The program was required to perform a few tasks:
 
 ## Technologies
 
-Here I will detail the different programs, languages and libraries used through the project
+Here I will detail the different programs, languages and libraries used throughout the project.
 
-### Visual Studio Code 
+#### Visual Studio Code 
 
-This was the text editor I used through the project.
+This was the text editor I used throughout the project.
 
-### Terminal 
+#### Terminal 
 
-As I operate on a MAC, Terminal was the command line interface I used 
+As I operate on a MAC, Terminal was the command line interface I used.
 
-### Python
+#### Python
 
 Python was the language used to compile the program and the version was 3.7.4
 
-### Ipython 
+#### Ipython 
 
 I used Ipython to test lines of code before incorporating them into the main programs. Ipython was extremely useful for trail and error and I made use of %logstart to track my work 
 
-### Matplotlib
+#### Matplotlib
 
-### Pandas 
+Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+### Pandas
+
+Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
 
 ### Seaborn
+
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 ## How to Use 
 
@@ -102,6 +110,8 @@ Generating the scatter plots was the simpliest part of the program thanks to sea
 I wanted to output just scatter plots, without the histograms that are included, as I had already created histograms, but couldn't find a sutable plot type in the seaborn documentation. 
 
 ### Joining everything together 
+
+Once the individual components of the program were complete, I set about merging them into one final project and ensuring they smoothly and efficiently together. I also improved the commenting the final program so that it was cohesive and logical.
 
 ### Analysis
 
