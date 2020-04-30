@@ -67,7 +67,7 @@ To run this programs, you will first need to ensure you can access the Command L
 
 ## **Research** 
 
-![Ronald Fisher](Ronald_Fisher.jpeg) 
+<div align="center">![Ronald Fisher](Ronald_Fisher.jpeg) 
 
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
 
