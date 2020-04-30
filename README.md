@@ -2,7 +2,7 @@
 
 
 
-## Programming and Scripting Problem Sheet 2020
+## **Programming and Scripting Problem Sheet 2020**
 
 - Introduction
 - Technologies
@@ -14,7 +14,7 @@
 - Conclusion 
 - References (Course Video)
 
-## Introduction
+## **Introduction**
 
 This repository contains my attempt at the final project for the Programming & Scripting module year 2020. The project was broken down into smaller programs which are all included in the repository, along with their logfile that demosntrates how they were developed. 
 
@@ -25,7 +25,7 @@ The program was required to perform a few tasks:
 2. Save a histogram of each variable to .png
 3. Output a scatter plot of each variable
 
-## Technologies
+## **Technologies**
 
 Here I will detail the different programs, languages and libraries used throughout the project.
 
@@ -49,23 +49,23 @@ I used Ipython to test lines of code before incorporating them into the main pro
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 
-### Pandas
+#### Pandas
 
 Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
 
-### Seaborn
+#### Seaborn
 
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
-## How to Use 
+## **How to Use** 
 
 To run this programs, you will first need to ensure you can access the Command Line Interface on your device. Then you should:
-- Download the file "Analysis.py" to your machine.
+- Download the file *Analysis.py* to your machine.
 - Go to the Command Line Interface on your machine 
-- Use 'cd' to navigating to the folder that contains "Analysis.py".
-- Run the program by typing "python Analysis.py" to the Command Line Interface and hitting enter.
+- Use 'cd' to navigating to the folder that contains *Analysis.py*.
+- Run the program by typing *python Analysis.py* to the Command Line Interface and hitting enter.
 
-## Research 
+## **Research** 
 
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
 
@@ -75,45 +75,45 @@ The data set consists of 50 samples from each of three species of Iris (Iris set
 
 
 
-## Methodology
+## **Methodology**
 
 After research, I began work on the program itself. I decided to break the program into separate, more mangable programs and once they were working, I would merging them together into one project. 
 
-### Reading in the Data Set 
+#### Reading in the Data Set 
 
 The fist step I needed to take was to find a suitable data set to work with. I chose to go with a CSV file instead of JSON or Txt as it would make it easier to differentiate the variables. I found a reliable file on Kaggl. I went with this as it was a "Tidy" data set. A "Tidy" data set is defined as a data set arranged such that each varaialbe is a column and each observtion is a row.
 
 Reading in the file was stragiht forward, I used the Pandas .read function to do so. As the data set incldued a column called Id which numbered each observation, the output of the summary looked a bit messy so I decided to delete this column.
 
-### Summary 
+#### Summary 
 
-The first aspect of the program I decided to tackle was outputing a summary of the variables of the data set to a text file. The individual file for this aspect of the program can be found in the repository named "summary,py" and "summary_log.py" is the relevant log file.
+The first aspect of the program I decided to tackle was outputing a summary of the variables of the data set to a text file. The individual file for this aspect of the program can be found in the repository named *summary.py* and *summary_log.py* is the relevant log file.
 
 Using Pandas describe() function, it was relatively similar to generate the summary. What was difficult was outputting this summary to a text file. After some trial and error, I realised I should pass the summary to a variable and then output that variable to the text file. At first this wouldnt work either until i realised the variable needed to be a string. 
 
 Another apsect I struggled with was trying to nicely format the summary in the text. Unfortunatly, I was able to find out how to format text when writing to a file. 
 
-### Histogram
+#### Histogram
 
-The next aspect of the program I undertook was saving a histogram of each variable to .png. A histogram is a visual representation of how the data points are distributed with respect to the frequency.The individual file for this aspect of the program can be found in the repository named "hist.py" and "hist_log.py" & "hist_improve_log.py" are the relevant log files.
+The next aspect of the program I undertook was saving a histogram of each variable to .png. A histogram is a visual representation of how the data points are distributed with respect to the frequency.The individual file for this aspect of the program can be found in the repository named *hist.py* and *hist_log.py* & *hist_improve_log.py* are the relevant log files.
 
 Generating these histograms proved to be the most difficult and time consuming single aspect of the program. The initial histograms were simple, but I decided I wanted to be able to differentiate the flower types in each histogram. After much reserach, I found the .loc function in Pandas that allowed me to group the flower types and assign them to variables, which could be called to create separate histogram. As I could now create histograms for certain characteristics of each flower type, I just needed to overlay the different histograms on top of each other to get a histogram for each characteristic that diffirentiated by flower type. 
 
 The code I used here is rather clunky and could be improved a lot. I read about about a better way to approach overlaying histograms by using for loops insteads of duplicating the code 4 times and changing the names, but I wasn't able to find sufficient documentation to explain how to do this.
 
-### Scatter Plot
+#### Scatter Plot
 
-Scatter plots are used to plot data points on a horizontal and a vertical axis in the attempt to show how much one variable is affected by another.  The relationship between two variables is called their correlation.
+Scatter plots are used to plot data points on a horizontal and a vertical axis in the attempt to show how much one variable is affected by another.  The relationship between two variables is called their correlation. he individual file for this aspect of the program can be found in the repository named *scatter.py* and *scatter_log.py* is the relevant log files.
 
 Generating the scatter plots was the simpliest part of the program thanks to seaborn, which handled the look of the plots.
 
 I wanted to output just scatter plots, without the histograms that are included, as I had already created histograms, but couldn't find a sutable plot type in the seaborn documentation. 
 
-### Joining everything together 
+#### Joining everything together 
 
 Once the individual components of the program were complete, I set about merging them into one final project and ensuring they smoothly and efficiently together. I also improved the commenting the final program so that it was cohesive and logical.
 
-### Analysis
+## **Analysis**
 
 Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal
 
@@ -123,19 +123,21 @@ Looking at the scatter plots, there seems to be a positive correlation between t
 
 In conclusion, it is not possible to diffferentiate the iris-veriscolor and iris-virginica based on the characteristics described. However, it is possible to distinguist the iris-setosa from the two other iris flower when looking at the sepal length.
 
-## Conclusion
+## **Conclusion**
 
 The objective of this project was to research the Iris data set and use python to perform analysis of it. I was requried to complie a program in python that would support my analysis and then present my findings. I feel, I sufficiently met the brief of this assignment and have improved my proficieny in python and broaden my knowledge of data analysis.
 
 In retrospect there are a few things I would do differently and improvement I would like to make, which I've listed previously.
 
-I spent too much time on reasearch and investigate way beyond the scope of this module. 
+One thing I did worng was spending too much time on reasearch and investigated way beyond the scope of this module. I was curious to learn more about the real-world application of the data set and its importance in machine learning. Although it was interesting, researching supervised/ unsupervised learning and types of analysis was too complicated and I could have invested the time better.
 
-I relied on Ipython for trail and error and worked a lot locally before uploading my first. Due to this my commit history is qutie recent and appears as though i have not been working consistently. Moving forward, i will get better at documenting my progress
+I relied on Ipython for trail and error and worked a lot locally before uploading my first draft. Due to this, my commit history is qutie recent and appears as though I have not been working consistently. Moving forward, i will get better at making regualr commits and documenting my progress.
 
-Get better with Git as I ran into a few problems changing branches and pulling changes.
+I would like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic command so when I ran into issues I panicked thinking that I have ruined my project.
 
-## Reference
+I enjoyed this project and look forward to learning more about how to perform data analysis in python. 
+
+## **Reference**
 
 (https://en.wikipedia.org/wiki/Iris_flower_data_set)
 (https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
