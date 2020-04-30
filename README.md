@@ -67,7 +67,7 @@ To run this programs, you will first need to ensure you can access the Command L
 
 ## **Research** 
 
-<div align="center">![Ronald Fisher](Ronald_Fisher.jpeg) 
+![Ronald Fisher](Ronald_Fisher.jpeg) 
 
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
 
@@ -118,6 +118,8 @@ Once the individual components of the program were complete, I set about merging
 
 ## **Analysis**
 
+![Petal Length](Petal_Length_Hist.png) ![Petal Width](Petal_Width_Hist.png)
+![Sepal Length](Sepal_Length_Hist.png) ![Petal Width](Sepal_Width_Hist.png)
 Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal
 
 What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most beteen the three varieties is the petal length. . We also see that length of the sepal for the iris-setosa seems to be more comsistent than the other two varieties. 
@@ -136,7 +138,7 @@ One thing I did worng was spending too much time on reasearch and investigated w
 
 I relied on Ipython for trail and error and worked a lot locally before uploading my first draft. Due to this, my commit history is qutie recent and appears as though I have not been working consistently. Moving forward, i will get better at making regualr commits and documenting my progress.
 
-I would like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic commands so when I ran into issues I panicked thinking that I have ruined my project. I also need to get better at writing a ReadMe as I struggled with adding images using markdown.
+I would like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic commands so when I ran into issues I panicked thinking that I have ruined my project. I also need to get better at writing a ReadMe as I struggled with adding images and resizing and aligning them using markdown.
 
 I enjoyed this project and look forward to learning more about how to perform data analysis in python. 
 
