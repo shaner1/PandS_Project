@@ -20,7 +20,10 @@ del iris['Id']
 summary = str(iris.describe())
 
 with open('Summary.txt', 'w') as text:
-    text.write(summary)
+    #then write the contents of summary to this file 
+      text.writelines("\nThis is a summary of the variables in the iris dataset: \n")
+      text.write("\n")
+      text.write(summary)
 
 #The section of the project will output a histogram for each variable of the data set
 
