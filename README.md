@@ -12,11 +12,11 @@
 - Analysis 
 - Improvements
 - Conclusion 
-- References (Course Video)
+- References 
 
 ## **Introduction**
 
-This repository contains my attempt at the final project for the Programming & Scripting module year 2020. The project was broken down into smaller programs which are all included in the repository, along with their logfile that demosntrates how they were developed. 
+This repository contains my attempt at the final project for the Programming & Scripting module year 2020. The project was broken down into smaller programs which are all included in the repository, along with their logfiles that demosntrate how they were developed. 
 
 The objective of this project was to research the Iris data set and use python to perform analysis of it. We were to complie a program in python and present our reseach, methodology and findings. The project should be conducted in stages and we should discuss the work done at each stage.
 
@@ -39,11 +39,11 @@ As I operate on a MAC, Terminal was the command line interface I used.
 
 #### Python
 
-Python was the language used to compile the program and the version was 3.7.4
+Python was the language used to compile the program and the version was 3.7.4.
 
 #### Ipython 
 
-I used Ipython to test lines of code before incorporating them into the main programs. Ipython was extremely useful for trail and error and I made use of %logstart to track my work 
+I used Ipython to test lines of code before incorporating them into the main programs. Ipython was extremely useful for trail and error and I made use of %logstart to track my work. 
 
 #### Matplotlib
 
@@ -84,7 +84,7 @@ After research, I began work on the program itself. I decided to break the progr
 
 #### Reading in the Data Set 
 
-The fist step I needed to take was to find a suitable data set to work with. I chose to go with a CSV file instead of JSON or Txt as it would make it easier to differentiate the variables. I found a reliable file on Kaggl. I went with this as it was a "Tidy" data set. A "Tidy" data set is defined as a data set arranged such that each varaialbe is a column and each observtion is a row.
+The fist step I needed to take was to find a suitable data set to work with. I chose to go with a CSV file instead of JSON or Txt as it would make it easier to differentiate the variables. I found a reliable file on Kaggle. I went with this as it was a "Tidy" data set. A "Tidy" data set is defined as a data set arranged such that each varaialbe is a column and each observtion is a row.
 
 Reading in the file was stragiht forward, I used the Pandas .read function to do so. As the data set incldued a column called Id which numbered each observation, the output of the summary looked a bit messy so I decided to delete this column.
 
@@ -92,9 +92,9 @@ Reading in the file was stragiht forward, I used the Pandas .read function to do
 
 The first aspect of the program I decided to tackle was outputing a summary of the variables of the data set to a text file. The individual file for this aspect of the program can be found in the repository named *summary.py* and *summary_log.py* is the relevant log file.
 
-Using Pandas describe() function, it was relatively similar to generate the summary. What was difficult was outputting this summary to a text file. After some trial and error, I realised I should pass the summary to a variable and then output that variable to the text file. At first this wouldnt work either until i realised the variable needed to be a string. 
+Using Pandas describe() function, it was relatively simple to generate the summary. What was difficult was outputting this summary to a text file. After some trial and error, I realised I should pass the summary to a variable and then output that variable to the text file. At first this wouldnt work either until i realised the variable needed to be a string. 
 
-Another apsect I struggled with was trying to nicely format the summary in the text. Unfortunatly, I was able to find out how to format text when writing to a file. 
+Another apsect I struggled with was trying to nicely format the summary in the text. Unfortunatly, I was not able to find out how to format text when writing to a file. 
 
 #### Histogram
 
@@ -102,59 +102,65 @@ The next aspect of the program I undertook was saving a histogram of each variab
 
 Generating these histograms proved to be the most difficult and time consuming single aspect of the program. The initial histograms were simple, but I decided I wanted to be able to differentiate the flower types in each histogram. After much reserach, I found the .loc function in Pandas that allowed me to group the flower types and assign them to variables, which could be called to create separate histogram. As I could now create histograms for certain characteristics of each flower type, I just needed to overlay the different histograms on top of each other to get a histogram for each characteristic that diffirentiated by flower type. 
 
-The code I used here is rather clunky and could be improved a lot. I read about about a better way to approach overlaying histograms by using for loops insteads of duplicating the code 4 times and changing the names, but I wasn't able to find sufficient documentation to explain how to do this.
+The code I used here is rather clunky and could be improved a lot. I read about a better way to approach overlaying histograms by using for loops insteads of duplicating the code 4 times and changing the names, but I wasn't able to find sufficient documentation to explain how to do this.
 
 #### Scatter Plot
 
-Scatter plots are used to plot data points on a horizontal and a vertical axis in the attempt to show how much one variable is affected by another.  The relationship between two variables is called their correlation. he individual file for this aspect of the program can be found in the repository named *scatter.py* and *scatter_log.py* is the relevant log files.
+Scatter plots are used to plot data points on a horizontal and a vertical axis in the attempt to show how much one variable is affected by another. The relationship between two variables is called their correlation. Correlation is a form of dependency, where a shift in one variable means a change is likely in the other, or that certain known variables produce specific results. A positive correlation exists when one variable decreases as the other variable decreases, or one variable increases while the other increases. Negative correlation is when one variable increases as the other decreases, and vice versa. The individual file for this aspect of the program can be found in the repository named *scatter.py* and *scatter_log.py* is the relevant log files.
 
 Generating the scatter plots was the simpliest part of the program thanks to seaborn, which handled the look of the plots.
 
-I wanted to output just scatter plots, without the histograms that are included, as I had already created histograms, but couldn't find a sutable plot type in the seaborn documentation. 
+I wanted to output just scatter plots, without the histograms that are included, as I had already created histograms, but couldn't find a suitable plot type in the seaborn documentation. 
 
 #### Joining everything together 
 
-Once the individual components of the program were complete, I set about merging them into one final project and ensuring they smoothly and efficiently together. I also improved the commenting the final program so that it was cohesive and logical.
+Once the individual components of the program were complete, I set about merging them into one final project and ensuring they ran smoothly and efficiently together. I also improved the commenting in the final program so that it was cohesive and logical.
 
 ## **Analysis**
 
 ![Petal Length](Petal_Length_Hist.png) ![Petal Width](Petal_Width_Hist.png)
 ![Sepal Length](Sepal_Length_Hist.png) ![Petal Width](Sepal_Width_Hist.png)
 
-Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal
+Using the histograms to investigate the characteristic of each flower type we can clearly see that the distribution of sepal length and width are similar in all three species of iris flower. It is not possible to distingusit one species of iris flower from another based on the characteristics of the sepal.
 
-What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most beteen the three varieties is the petal length. . We also see that length of the sepal for the iris-setosa seems to be more comsistent than the other two varieties. 
+What is noticeably different between the species is the charactertics of the Petal. Both the petal length and width of iris-setosa are relatively smaller compared to the two others species. What differs the most between the three varieties is the petal length. . We also see that length of the sepal for the iris-setosa seems to be more consistent than the other two varieties. 
 
 ![Scatter Plot](scatter.png)
 
-Looking at the scatter plots, there seems to be a positive correlation between the length and width of all the species, however there is a distinguishing strong correlation and relationship between petal length and petal width.
+Looking at the scatter plots, there seems to be a positive correlation between the length and width of all the species, however there is a distinguishing correlation between petal length and petal width.
 
 In conclusion, it is not possible to diffferentiate the iris-veriscolor and iris-virginica based on the characteristics described. However, it is possible to distinguist the iris-setosa from the two other iris flower when looking at the sepal length.
 
 ## **Conclusion**
 
-The objective of this project was to research the Iris data set and use python to perform analysis of it. I was requried to complie a program in python that would support my analysis and then present my findings. I feel, I sufficiently met the brief of this assignment and have improved my proficieny in python and broaden my knowledge of data analysis.
+The objective of this project was to research the Iris data set and use python to perform analysis of it. I was requried to compile a program in python that would support my analysis and then present my findings. I feel, I sufficiently met the brief of this assignment and have improved my proficieny in python and broadened my knowledge of data analysis.
 
-In retrospect there are a few things I would do differently and improvement I would like to make, which I've listed previously.
+I have previously detailed the improvements I would like to make and in retrospect, there are a few things I would do differently regarding my methodology.
 
-One thing I did worng was spending too much time on reasearch and investigated way beyond the scope of this module. I was curious to learn more about the real-world application of the data set and its importance in machine learning. Although it was interesting, researching supervised/ unsupervised learning and types of analysis was too complicated and I could have invested the time better.
+One thing I did worng was spending too much time on reasearch and investigated way beyond the scope of this module. I was curious to learn more about the real-world application of the data set and its importance in machine learning. Although it was interesting, researching supervised/ unsupervised learning and various types of analysis was too complicated and I could have invested the time better.
 
-I relied on Ipython for trail and error and worked a lot locally before uploading my first draft. Due to this, my commit history is qutie recent and appears as though I have not been working consistently. Moving forward, i will get better at making regualr commits and documenting my progress.
+I relied on Ipython for trail and error and worked a lot locally before uploading my first draft. Due to this, my commit history is qutie recent and appears as though I have not been working consistently. Moving forward, I will get better at making regular commits and documenting my progress.
 
-I would like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic commands so when I ran into issues I panicked thinking that I have ruined my project. I also need to get better at writing a ReadMe as I struggled with adding images and resizing and aligning them using markdown.
+I would aslo like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic commands so when I ran into issues I panicked thinking that I had ruined my project. I also need to get better at writing a ReadMe as I struggled with adding images, resizing and aligning them using markdown.
 
 I enjoyed this project and look forward to learning more about how to perform data analysis in python. 
 
 ## **Reference**
 
+Programming & Scripting Course Videos 
+
 (https://en.wikipedia.org/wiki/Iris_flower_data_set)
 (https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
+(https://en.wikipedia.org/wiki/Tidy_data)
 (https://rpubs.com/AjinkyaUC/Iris_DataSet)
+(https://www.investopedia.com/terms/p/positive-correlation.asp)
 (https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
 (http://rstudio-pubs-static.s3.amazonaws.com/450733_9a472ce9632f4ffbb2d6175aaaee5be6.html)
 
 (https://www.kaggle.com/arshid/iris-flower-dataset)
-
+(https://docs.python.org/3/tutorial/index.html)
+(https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/)
+(https://stackoverflow.com/questions/13411544/delete-column-from-pandas-dataframe)
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html)
 (https://pandas.pydata.org/pandas-docs/stable/index.html)
@@ -163,6 +169,7 @@ I enjoyed this project and look forward to learning more about how to perform da
 (https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file)
 (https://www.interviewqs.com/ddi_code_snippets/rows_cols_python)
  (https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib)
+(https://seaborn.pydata.org/tutorial/axis_grids.html)
 
 (https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 (https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
