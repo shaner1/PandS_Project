@@ -67,11 +67,15 @@ To run this programs, you will first need to ensure you can access the Command L
 
 ## **Research** 
 
+![Ronald Fisher](Ronald_Fisher.jpg) 
+
 The Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher. The objective of the data set is, given the sepal length, sepal width, petal length and petal width, classify the samples into their species
+
+![Iris Setosa](Iris_setosa.jpg) ![Iris Versicolor](Iris_versicolor.jpg) ![Iris Virginica](Iris_virginica.jpg)
+
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. This linear discriminant analysis would lay the foundation of machine learning.
 
-![Iris Setosa](Iris_setosa.jpg) ![Iris Versicolor](images/Iris_versicolor.jpg) ![](images/Iris_virginica.jpg)
 
 
 
@@ -133,7 +137,7 @@ One thing I did worng was spending too much time on reasearch and investigated w
 
 I relied on Ipython for trail and error and worked a lot locally before uploading my first draft. Due to this, my commit history is qutie recent and appears as though I have not been working consistently. Moving forward, i will get better at making regualr commits and documenting my progress.
 
-I would like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic command so when I ran into issues I panicked thinking that I have ruined my project.
+I would like to get better with Git as I ran into a few problems changing branches and pulling changes. My knowledge of Git doesnt go beyond basic commands so when I ran into issues I panicked thinking that I have ruined my project. I also need to get better at writing a ReadMe as I struggled with adding images using markdown.
 
 I enjoyed this project and look forward to learning more about how to perform data analysis in python. 
 
